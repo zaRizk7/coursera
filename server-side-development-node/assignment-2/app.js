@@ -3,6 +3,18 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+var mongoose = require("mongoose");
+
+var url = "mongodb://localhost:27017/assignment-2";
+const connect = mongoose.connect(url, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
+
+connect.then((db) => {
+  console.log("Connected correctly to server");
+});
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
