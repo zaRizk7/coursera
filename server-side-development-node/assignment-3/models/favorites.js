@@ -11,6 +11,6 @@ const favoriteSchema = new Schema({
 	dishes: [{ type: Schema.Types.ObjectId, ref: 'Dish' }],
 });
 
-const Leaders = mongoose.model('Favorite', favoriteSchema);
+const Favorites = mongoose.model('Favorite', favoriteSchema);
 
-module.exports = Leaders;
+module.exports = Favorites;
