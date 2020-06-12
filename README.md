@@ -1,2 +1,2 @@
 # coursera
-My studies in Coursera.
+My studies in Coursera
